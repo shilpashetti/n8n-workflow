@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Automation Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Workflows</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage Content -->
+  <main>
+    <h1>Welcome to the Digizura Automation Dashboard</h1>
+
+    <h2>Available Workflows:</h2>
+    <div id="workflow-cards"></div>
+
+    <div id="workflow-result" style="margin-top: 40px;"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Digizura Automation Dashboard</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to the Automation Dashboard</h1>
+  <a href="workflows.html">
+    <button>Click Here to View Workflows</button>
+  </a>
+
+  
+</body>
+</html> -->
+
+
+
+ <!-- <button onclick="triggerWebhook()">Trigger Workflow</button>
+
+<script>
+  async function triggerWebhook() {
+    try {
+      const response = await fetch('http://localhost:5678/webhook/AruyZG6zO6Y56Mnl', {  // ✅ PRODUCTION WEBHOOK
+        method: 'POST',  // ✅ Must be POST
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: "Hello!"
+        })
+      });
+
+      const result = await response.json();
+      alert('Success: ' + JSON.stringify(result));
+    } catch (error) {
+      alert('Error: ' + error.message);
+    }
+  }
+</script> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>n8n Workflow Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>n8n Workflow Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Workflows</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="workflow-list">
+      <h2>Workflows</h2>
+      <div id="workflow-cards">
+       
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Digizura Technologies workflows</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
